@@ -18,25 +18,25 @@ export class App {
 
   protected readonly projects = [
     {
-      name: 'TellMe School - Agenda Escolar',
+      name: 'DesafioFast',
       description:
-        'Plataforma educacional com foco em comunicacao escolar, organizacao de rotina e produtividade para instituicoes de ensino.',
-      tags: ['Angular', 'C#', 'SQL'],
-      githubUrl: 'https://github.com/seu-usuario/tellme-school'
+        'Sistema fullstack de gerenciamento de workshops com backend em .NET 7 e frontend em Angular, incluindo cadastro de workshops, pets, consultas e atas.',
+      tags: ['.NET 7', 'Angular', 'SQL'],
+      githubUrl: 'https://github.com/Allyzu/DesafioFast'
     },
     {
-      name: 'API de Gestao de Tarefas',
+      name: 'Api Brasileirao',
       description:
-        'API REST com autenticacao, controle de permissoes e estrutura preparada para escalar em aplicacoes SaaS.',
-      tags: ['Java', 'SQL', 'Git'],
-      githubUrl: 'https://github.com/seu-usuario/task-api'
+        "Estudo de consumo de APIs com Angular usando dados da API Futebol para acompanhamento do Campeonato Brasileiro.",
+      tags: ['Angular', 'API REST', 'TypeScript'],
+      githubUrl: 'https://github.com/Allyzu/ApiBrasileirao'
     },
     {
-      name: 'Dashboard Fullstack',
+      name: 'Rede Neural Perceptron',
       description:
-        'Dashboard para acompanhamento de indicadores com filtros, graficos e integracao com multiplas fontes de dados.',
-      tags: ['Angular', 'JavaScript', 'C#'],
-      githubUrl: 'https://github.com/seu-usuario/fullstack-dashboard'
+        'Desenvolvimento de uma rede neural perceptron em JavaScript para projeto realizado no Museu Espaco Ciencia.',
+      tags: ['JavaScript', 'IA', 'Perceptron'],
+      githubUrl: 'https://github.com/Allyzu/rede-neural-perceptron'
     }
   ];
 }
