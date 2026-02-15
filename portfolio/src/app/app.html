@@ -1,0 +1,143 @@
+<main>
+  <section class="hero section-space">
+    <div class="container">
+      <div class="hero-panel reveal">
+        <p class="eyebrow">Portfolio profissional</p>
+        <h1 class="hero-title">Allyson Henrique</h1>
+        <p class="hero-subtitle">Desenvolvedor Fullstack</p>
+        <p class="hero-text">
+          Construo aplicacoes robustas e bem estruturadas com foco em performance,
+          manutenibilidade e experiencia do usuario.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-accent" href="#projetos">Ver Projetos</a>
+          <a
+            class="btn btn-outline-accent"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
+        </div>
+        <div class="social-links" aria-label="Redes sociais">
+          <a
+            class="social-link"
+            href="https://github.com/seu-usuario"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.79 8.21 11.38.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.07-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.31-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.12-.31-.54-1.57.12-3.27 0 0 1.01-.32 3.3 1.23A11.5 11.5 0 0 1 12 5.8c1.02 0 2.05.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.7.25 2.96.12 3.27.77.84 1.24 1.92 1.24 3.23 0 4.62-2.8 5.63-5.48 5.94.43.37.82 1.09.82 2.2 0 1.59-.01 2.87-.01 3.27 0 .32.21.7.83.58A12.01 12.01 0 0 0 24 12c0-6.63-5.37-12-12-12Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/seu-usuario"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4.98 3.5C4.98 5 3.77 6.2 2.28 6.2 0.8 6.2-.4 5-.4 3.5-.4 2.02.8.82 2.28.82c1.5 0 2.7 1.2 2.7 2.68ZM-.08 8.18H4.6V24H-.08V8.18Zm7.2 0h4.49v2.16h.06c.62-1.18 2.14-2.42 4.4-2.42 4.7 0 5.57 3.1 5.57 7.12V24h-4.68v-7.93c0-1.9-.03-4.33-2.64-4.33-2.64 0-3.05 2.06-3.05 4.2V24H7.12V8.18Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="mailto:seuemail@dominio.com"
+            aria-label="Email"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M2 4h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H2a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2Zm0 3.25V18h20V7.25l-9.45 6.3a1 1 0 0 1-1.1 0L2 7.25Zm18.2-1.25H3.8L12 11.47 20.2 6Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section-space">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-12 col-lg-7">
+          <article class="content-card reveal">
+            <h2>Sobre mim</h2>
+            <p>
+              Sou Allyson Henrique, desenvolvedor fullstack com experiencia em
+              construcao de solucoes web modernas.
+            </p>
+            <p>
+              Atualmente atuo no desenvolvimento da plataforma
+              <strong>TellMe School</strong>, contribuindo para entregas com foco
+              em qualidade, valor de negocio e evolucao continua do produto.
+            </p>
+          </article>
+        </div>
+        <div class="col-12 col-lg-5">
+          <article class="content-card reveal">
+            <h2>Stack principal</h2>
+            <div class="chip-group">
+              @for (stack of stacks; track stack) {
+                <span class="chip">{{ stack }}</span>
+              }
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia" class="section-space">
+    <div class="container">
+      <article class="content-card reveal">
+        <h2>Experiencia atual</h2>
+        <p class="experience-title">Desenvolvedor - TellMe School</p>
+        <p>
+          Desenvolvimento e evolucao de funcionalidades para a agenda escolar
+          digital, integracoes com API, melhorias de interface e suporte tecnico
+          ao ciclo completo de entrega.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projetos" class="section-space">
+    <div class="container">
+      <h2 class="section-title reveal">Projetos em destaque</h2>
+      <div class="row g-4">
+        @for (project of projects; track project.name) {
+          <div class="col-12 col-md-6 col-xl-4">
+            <article class="project-card reveal">
+              <h3>{{ project.name }}</h3>
+              <p>{{ project.description }}</p>
+              <div class="chip-group">
+                @for (tag of project.tags; track tag) {
+                  <span class="chip chip-light">{{ tag }}</span>
+                }
+              </div>
+              <a
+                class="project-link"
+                [href]="project.githubUrl"
+                target="_blank"
+                rel="noopener"
+              >
+                Ver no GitHub
+              </a>
+            </article>
+          </div>
+        }
+      </div>
+      <p class="projects-note reveal">
+        Atualize os links de GitHub no arquivo <code>src/app/app.ts</code> para
+        apontar para seus repositorios reais.
+      </p>
+    </div>
+  </section>
+</main>
