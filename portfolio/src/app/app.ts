@@ -9,13 +9,18 @@ import { Component } from '@angular/core';
 export class App {
   protected readonly stacks = [
     'C#',
+    '.NET',
+    'ASP.NET MVC',
+    'Entity Framework',
+    'APIs REST',
+    'MVC Razor',
     'Java',
     'JavaScript',
     'Angular',
     'Git',
-    'SQL'
+    'SQL Server'
   ];
-
+  
   protected readonly projects = [
     {
       name: 'DesafioFast',
@@ -25,11 +30,11 @@ export class App {
       githubUrl: 'https://github.com/Allyzu/DesafioFast'
     },
     {
-      name: 'Api Brasileirao',
+      name: 'Gerenciador de workshops clean architecture',
       description:
-        "Estudo de consumo de APIs com Angular usando dados da API Futebol para acompanhamento do Campeonato Brasileiro.",
-      tags: ['Angular', 'API REST', 'TypeScript'],
-      githubUrl: 'https://github.com/Allyzu/ApiBrasileirao'
+        "Gerenciador de Workshops em ASP.NET Core MVC com arquitetura em camadas (Web, Application, Domain e Infrastructure), voltado para organizar workshops, colaboradores e atas, com login, dashboard e paginação para facilitar a gestão do dia a dia.",
+      tags: ['ASP.NET Core MVC (.NET 8)', 'API REST', 'C#'],
+      githubUrl: 'https://github.com/Allyzu/gerenciador-workshops-clean-architecture'
     },
     {
       name: 'Rede Neural Perceptron',
